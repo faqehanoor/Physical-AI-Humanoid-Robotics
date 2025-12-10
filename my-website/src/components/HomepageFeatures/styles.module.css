@@ -1,0 +1,39 @@
+.features {
+  display: flex;
+  align-items: center;
+  padding: 4rem 0;
+  width: 100%;
+  background-color: white;
+  color: #333;
+}
+
+.featureSvg {
+  height: 200px;
+  width: 200px;
+}
+
+.featureCard {
+  background: #f8f9fa;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+  height: 100%;
+  color: #333;
+  border: 1px solid #e9ecef;
+}
+
+.featureCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(30, 60, 114, 0.1);
+}
+
+.featureTitle {
+  color: #1e3c72;
+  margin-bottom: 1rem;
+}
+
+.featureDescription {
+  color: #6c757d;
+  line-height: 1.6;
+}

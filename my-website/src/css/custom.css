@@ -1,0 +1,134 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #5222d0;
+  --ifm-color-primary-dark: #3b199c;
+  --ifm-color-primary-darker: #35178d;
+  --ifm-color-primary-darkest: #2c1374;
+  --ifm-color-primary-light: #693be5;
+  --ifm-color-primary-lighter: #7348e8;
+  --ifm-color-primary-lightest: #916ff0;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #8844ee;
+  --ifm-color-primary-dark: #7022e3;
+  --ifm-color-primary-darker: #6618d9;
+  --ifm-color-primary-darkest: #5514b3;
+  --ifm-color-primary-light: #a06af0;
+  --ifm-color-primary-lighter: #ad7df2;
+  --ifm-color-primary-lightest: #c9a6f7;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for Physical AI Book */
+.physical-ai-container {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.physical-ai-intro {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.physical-ai-intro h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.physical-ai-intro p {
+  font-size: 1.2rem;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.lesson-content {
+  padding: 2rem 0;
+}
+
+.lesson-title {
+  border-bottom: 2px solid var(--ifm-color-primary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.lesson-objectives {
+  background-color: var(--ifm-color-emphasis-100);
+  padding: 1rem;
+  border-radius: var(--ifm-global-radius);
+  margin-bottom: 1.5rem;
+}
+
+.lesson-objectives h3 {
+  margin-top: 0;
+}
+
+.prerequisites {
+  background-color: #e8f4fd;
+  border-left: 4px solid var(--ifm-color-info);
+  padding: 1rem;
+  margin: 1.5rem 0;
+}
+
+.exercise-block {
+  border: 2px dashed var(--ifm-color-warning);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: var(--ifm-global-radius);
+}
+
+.exercise-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: var(--ifm-color-warning-dark);
+}
+
+.progress-bar {
+  height: 8px;
+  background-color: var(--ifm-color-emphasis-200);
+  border-radius: 4px;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: var(--ifm-color-success);
+  transition: width 0.3s ease;
+}
+
+/* Accessibility enhancements */
+@media (prefers-reduced-motion: reduce) {
+  .progress-bar-fill {
+    transition: none;
+  }
+}
+
+/* Responsive design adjustments */
+@media (max-width: 996px) {
+  .physical-ai-intro h1 {
+    font-size: 2.5rem;
+  }
+
+  .lesson-content {
+    padding: 1rem 0;
+  }
+}
+
+/* Focus styles for accessibility */
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+

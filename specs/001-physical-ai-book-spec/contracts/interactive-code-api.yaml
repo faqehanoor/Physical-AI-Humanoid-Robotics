@@ -1,0 +1,62 @@
+# API Contract: Interactive Code Execution Service
+
+## Purpose
+This contract defines the interface for executing code examples within the Physical AI Book documentation. This enables the "Hands-On Learning First" principle from the constitution.
+
+## Endpoints
+
+### POST /api/code/execute
+Execute a code snippet and return the result
+
+**Request**:
+```json
+{
+  "code": "string (the code to execute)",
+  "language": "string (programming language)",
+  "dependencies": "array of strings (required packages)",
+  "timeout": "number (execution timeout in ms, default 10000)"
+}
+```
+
+**Response**:
+```json
+{
+  "success": "boolean",
+  "output": "string (stdout/stderr)",
+  "result": "string (execution result)",
+  "error": "string (error message if failed)",
+  "executionTime": "number (time taken in ms)"
+}
+```
+
+**Status Codes**:
+- 200: Code executed successfully
+- 400: Invalid request format
+- 408: Execution timeout
+- 500: Execution error
+
+### GET /api/code/validate
+Validate code syntax without executing
+
+**Request**:
+```json
+{
+  "code": "string (the code to validate)",
+  "language": "string (programming language)"
+}
+```
+
+**Response**:
+```json
+{
+  "valid": "boolean",
+  "errors": "array of strings (validation errors)",
+  "warnings": "array of strings (validation warnings)"
+}
+```
+
+## Security Considerations
+- Code execution is sandboxed
+- Resource limits enforced (CPU, memory, network)
+- No file system access allowed
+- Timeouts prevent infinite loops

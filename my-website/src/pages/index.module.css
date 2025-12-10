@@ -1,0 +1,159 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  padding: 6rem 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  color: white;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 996px) {
+  .heroBanner {
+    padding: 3rem 1rem;
+  }
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.mainContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.bookShowcase {
+  padding: 4rem 0;
+  background-color: #f8f9fa;
+  color: #333;
+  position: relative;
+}
+
+.bookShowcaseGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.5rem;
+  margin-top: 2rem;
+  perspective: 2000px;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.bookShowcase::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(ellipse at center, rgba(30, 60, 114, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.bookCard {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #333;
+  border: 1px solid #e9ecef;
+}
+
+.bookCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(30, 60, 114, 0.2);
+}
+
+.bookImage {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 3px solid #1e3c72;
+}
+
+.bookContent {
+  padding: 1.5rem;
+}
+
+.bookTitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #1e3c72;
+}
+
+.bookDescription {
+  color: #6c757d;
+  line-height: 1.6;
+}
+
+.testimonials {
+  padding: 4rem 0;
+  background: linear-gradient(135deg, #2a5298 0%, #1e3c72 100%);
+  color: white;
+  text-align: center;
+}
+
+.testimonialGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.testimonialCard {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.testimonialText {
+  font-style: italic;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.testimonialAuthor {
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+.ctaSection {
+  padding: 6rem 0;
+  text-align: center;
+  background-color: white;
+  color: #333;
+}
+
+.ctaButton {
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  background: #1e3c72;
+  border: 2px solid #1e3c72;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.ctaButton:hover {
+  transform: scale(1.05);
+  background: #2a5298;
+  border-color: #2a5298;
+}

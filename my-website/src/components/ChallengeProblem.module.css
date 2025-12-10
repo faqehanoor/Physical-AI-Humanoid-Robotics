@@ -1,0 +1,142 @@
+.challengeProblem {
+  border: 3px solid var(--ifm-color-emphasis-400);
+  border-radius: var(--ifm-global-radius);
+  margin: 1.5rem 0;
+  overflow: hidden;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.challengeProblem.difficulty-intermediate {
+  border-color: var(--ifm-color-warning);
+}
+
+.challengeProblem.difficulty-advanced {
+  border-color: var(--ifm-color-danger);
+}
+
+.challengeHeader {
+  background: linear-gradient(135deg, var(--ifm-color-emphasis-300), var(--ifm-color-emphasis-200));
+  padding: 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.challengeTitle {
+  margin: 0;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.difficultyBadge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+  flex-shrink: 0;
+}
+
+.difficultyBadge.difficulty-intermediate {
+  background-color: var(--ifm-color-warning);
+  color: var(--ifm-color-gray-900);
+}
+
+.difficultyBadge.difficulty-advanced {
+  background-color: var(--ifm-color-danger);
+  color: white;
+}
+
+.pointsBadge {
+  font-size: 0.85rem;
+  padding: 0.25rem 0.5rem;
+  background-color: var(--ifm-color-primary);
+  color: white;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+.challengeContent {
+  padding: 1.5rem;
+}
+
+.challengeDescription {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.challengeInstructions {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background: linear-gradient(to right, var(--ifm-color-emphasis-200), var(--ifm-color-emphasis-100));
+  border-radius: var(--ifm-global-radius);
+}
+
+.challengeInstructions h4 {
+  margin-top: 0;
+}
+
+.challengeInput {
+  margin: 1.5rem 0;
+}
+
+.answerTextarea {
+  width: 100%;
+  font-family: var(--ifm-font-family-base);
+  font-size: var(--ifm-font-size-base);
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content);
+  resize: vertical;
+}
+
+.challengeActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.submitButton {
+  background-color: var(--ifm-color-primary);
+  border-color: var(--ifm-color-primary);
+}
+
+.hintButton {
+  background-color: var(--ifm-color-info);
+  border-color: var(--ifm-color-info);
+  color: white;
+}
+
+.resetButton {
+  border: 1px solid var(--ifm-color-emphasis-400);
+}
+
+.hint {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: #e8f4fd;
+  border-left: 4px solid var(--ifm-color-info);
+  border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
+}
+
+.hint h4 {
+  margin-top: 0;
+  color: var(--ifm-color-info);
+}
+
+.submissionFeedback {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: #e8f5e9;
+  border-left: 4px solid var(--ifm-color-success);
+  border-radius: 0 var(--ifm-global-radius) var(--ifm-global-radius) 0;
+}
+
+.submissionFeedback h4 {
+  margin-top: 0;
+  color: var(--ifm-color-success);
+}

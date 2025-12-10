@@ -1,0 +1,140 @@
+.exerciseBlock {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  margin: 1.5rem 0;
+  overflow: hidden;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.exerciseBlock.difficulty-beginner {
+  border-color: var(--ifm-color-success);
+}
+
+.exerciseBlock.difficulty-intermediate {
+  border-color: var(--ifm-color-warning);
+}
+
+.exerciseHeader {
+  background-color: var(--ifm-color-emphasis-200);
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.exerciseTitle {
+  margin: 0;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.difficultyBadge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.difficultyBadge.difficulty-beginner {
+  background-color: var(--ifm-color-success);
+  color: white;
+}
+
+.difficultyBadge.difficulty-intermediate {
+  background-color: var(--ifm-color-warning);
+  color: var(--ifm-color-gray-900);
+}
+
+.exerciseContent {
+  padding: 1.5rem;
+}
+
+.exerciseDescription {
+  margin-bottom: 1rem;
+}
+
+.exerciseInstructions {
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-100);
+  border-radius: var(--ifm-global-radius);
+}
+
+.exerciseInstructions h4 {
+  margin-top: 0;
+}
+
+.codeEditor {
+  margin: 1.5rem 0;
+}
+
+.codeTextarea {
+  width: 100%;
+  min-height: 150px;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: var(--ifm-code-font-size);
+  padding: 1rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  background-color: var(--ifm-background-surface-color);
+  color: var(--ifm-color-content);
+  resize: vertical;
+}
+
+.exerciseActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+
+.runButton {
+  background-color: var(--ifm-color-success);
+  border-color: var(--ifm-color-success);
+}
+
+.checkButton {
+  background-color: var(--ifm-color-info);
+  border-color: var(--ifm-color-info);
+}
+
+.solutionButton {
+  background-color: var(--ifm-color-warning);
+  border-color: var(--ifm-color-warning);
+  color: var(--ifm-color-gray-900);
+}
+
+.resetButton {
+  border: 1px solid var(--ifm-color-emphasis-400);
+}
+
+.solution {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+}
+
+.solution h4 {
+  margin-top: 0;
+}
+
+.solutionCode {
+  margin: 0.5rem 0 0 0;
+  padding: 0.5rem;
+  background-color: var(--ifm-background-surface-color);
+  border-radius: var(--ifm-global-radius);
+  overflow-x: auto;
+}
+
+.output {
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background-color: var(--ifm-color-emphasis-200);
+  border-radius: var(--ifm-global-radius);
+}
+
+.output h4 {
+  margin-top: 0;
+}
